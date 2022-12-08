@@ -40,7 +40,18 @@ Go to `mysite/settings.py`\
 add `myapi.apps.MyapiConfig` to `INSTALLED_APPS`
 
 
+FAST API
+`uvicorn main:app --reload`\
+`http://127.0.0.1:8000/doc
+
+The websocket example on fastapi has a connected list which is in memory, in order to manage that list it needs to be connected to either postgres or redis
+The fastapi documentation recommends using [broadcaster](https://github.com/encode/broadcaster)
+
+Starlette and FastAPI
+https://github.com/kthwaite/fastapi-websocket-broadcast/blob/master/app.py
+
 Nextjs
 ------
 https://blog.logrocket.com/implementing-websocket-communication-next-js/
 
+https://climbtheladder.com/10-websocket-best-practices/
